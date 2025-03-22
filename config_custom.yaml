@@ -1,6 +1,6 @@
 log:
   level: info
-  file: "/var/log/mosdns.log"
+  file: "/opt/var/log/mosdns.log"
 
 # API 入口设置     
 api:
@@ -9,8 +9,8 @@ api:
 # []string, 从其他配置文件载入 plugins 插件设置。
 # include 的插件会比本配置文件中的插件先初始化。
 include: 
-  - "/etc/mosdns/load_rules.yaml"
-  - "/etc/mosdns/forward.yaml"
+  - "/opt/etc/mosdns/load_rules.yaml"
+  - "/opt/etc/mosdns/forward.yaml"
 
 plugins:
   # IP 优选，需要定期修改，最好填写 2-4 个

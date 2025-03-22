@@ -3,7 +3,7 @@
 
 配置文件不考虑和之前版本的兼容性，如需更新务必拉取所有文件。
 
-yaml 文件应放在 `/etc/mosdns/` 目录下，可配合 luci-app-mosdns 使用。如果要在公网使用，建议将 OpenWrt 自带的 uHTTPd 更换成 Nginx 并设置反代。
+yaml 文件应放在 `/opt/etc/mosdns/` 目录下，可配合 luci-app-mosdns 使用。如果要在公网使用，建议将 OpenWrt 自带的 uHTTPd 更换成 Nginx 并设置反代。
 
 可以搭配各种代理工具使用。需要将代理工具内置 DNS 指向 mosdns。顺序应为：Dnsmasq &rarr; 代理工具 &rarr; mosdns 或者 代理工具 &rarr; Dnsmasq &rarr; mosdns。无论使用何种顺序，请避免回环。
 

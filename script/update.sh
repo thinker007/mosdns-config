@@ -2,7 +2,7 @@
 # Powered by Apad.pro
 # https://apad.pro/easymosdns
 #
-mosdns_working_dir="/etc/mosdns"
+mosdns_working_dir="/opt/etc/mosdns"
 mkdir -p /tmp/easymosdns \
 && curl https://github.boki.moe/https://raw.githubusercontent.com/Journalist-HK/Rules/main/akamai_domain_list.txt > /tmp/easymosdns/akamai_domain_list.txt \
 && curl https://github.boki.moe/https://raw.githubusercontent.com/Journalist-HK/Rules/main/block_list.txt > /tmp/easymosdns/block_list.txt \
